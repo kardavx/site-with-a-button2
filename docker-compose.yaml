@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./app.dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./hello-world:/app
+
